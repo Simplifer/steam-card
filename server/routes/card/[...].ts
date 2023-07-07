@@ -16,6 +16,7 @@ const PNG_PREFIX = 'data:image/png;base64,'
 
 export default defineEventHandler(async (event) => {
   try {
+    setHeader(event, 'Access-Control-Allow-Origin', '*')
     setHeader(event, 'Content-Type', 'image/svg+xml')
     setHeader(event, 'Cache-Control', `public, max-age=${cacheTime}`)
     const { _ } = event.context.params as { _: string }
@@ -32,7 +33,10 @@ export default defineEventHandler(async (event) => {
       return errorCard('Sorry, your account had been banned.', i18n.get('error-info'))
 
     const AllData = await Promise.all([
-      getPlayerSummaries({ key, steamids: steamid }),
+      getPlayerSummaries({
+        key,
+        steamids: steamid,
+      }),
       getRecentlyPlayedGames({
         format: 'json',
         steamid,
@@ -60,7 +64,15 @@ export default defineEventHandler(async (event) => {
       badgeCount,
       playerLevel,
     } = crawler(profile)
-    const { games, accountYear, playTime, totalTime, avatarUrl, name, isOnline } = data(player.response.players[0], playedGames.response, allGames.response)
+    const {
+      games,
+      accountYear,
+      playTime,
+      totalTime,
+      avatarUrl,
+      name,
+      isOnline,
+    } = data(player.response.players[0], playedGames.response, allGames.response)
     let badgeIcon = ''
     if (badgeIconUrl) {
       badgeIcon = await imageUrl2Base64(badgeIconUrl)
