@@ -134,7 +134,7 @@ export default defineEventHandler(async (event) => {
 
     if (_setting.bg.includes('bg-game')) {
       const arrs = _setting.bg.split('-')
-      let url = ''
+      let url: string
       if (arrs.length < 3) {
         const { appid } = await $fetch(`/info/games/${steamid}`)
         url = getGameCoverUrl(appid!)
