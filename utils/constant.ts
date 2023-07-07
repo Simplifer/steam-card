@@ -21,6 +21,6 @@ export const statisticsList: Statistic[] = [
   'artworks',
   'reviews',
 ]
-export const defaultSteamId = '76561198028121353'
+export const defaultSteamId = '76561198407118815'
 
 export const defaultStatistics: Statistic[] = ['games', 'groups', 'badges']

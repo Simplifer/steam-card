@@ -217,7 +217,7 @@ class Card {
             <img class="avatar" src="${this.avatarUrlBase64}" width="60" height="60" />
             <div class="status">
               <div style="font-size:12px;font-weight:bold">
-                  ${this.name} | ${this.accountYear}年
+                  ${this.name} | ${this.accountYear}${this.i18n.get('years')}
               </div>
               <div style="font-size:12px;font-weight:bold">
                   LV. ${this.playerLevel}
