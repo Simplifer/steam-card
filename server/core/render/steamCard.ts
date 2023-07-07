@@ -4,7 +4,7 @@ import Card from './Card'
 
 const steamCard = (
   name: string,
-  accountYear: number,
+  accountYear: string,
   avatarUrlBase64: string,
   playerLevel: string,
   isOnline: number,

@@ -149,7 +149,7 @@ export default defineEventHandler(async (event) => {
 
     return steamCard(
       name,
-        accountYear,
+      accountYear,
       avatarUrlBase64,
       playerLevel,
       isOnline,
