@@ -14,3 +14,7 @@ export interface RecentlyPlayedGames extends BaseParams {
 export interface OwnedParams extends BaseParams {
   format: string
 }
+export interface ApexParams {
+  platform: string
+  player: string
+}

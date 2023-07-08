@@ -37,3 +37,4 @@ export function getSteamProfile(steamid: string) {
     },
   })
 }
+
