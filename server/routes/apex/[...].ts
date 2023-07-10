@@ -1,4 +1,5 @@
 import { dataApex } from 'server/core/logic/dataApex'
+import { apexCard } from 'server/core/render/apexCard'
 import { getApexPlayerSummaries } from 'server/core/request/ApexApi'
 import errorCard from 'server/core/render/errorCard'
 import initLocale from 'server/core/locales'
@@ -15,8 +16,9 @@ export default defineEventHandler(async (event) => {
     setHeader(event, 'Cache-Control', `public, max-age=${cacheTime}`)
     const { _ } = event.context.params as { _: string }
     const splitArr = _.split('/')
+
     const player = splitArr[0]
-    const platform = splitArr[1]
+    const platform = splitArr[1]?.toUpperCase()
     const AllData = await Promise.all([
       getApexPlayerSummaries({
         player,
@@ -26,23 +28,32 @@ export default defineEventHandler(async (event) => {
     const [playerInfo] = AllData
 
     const {
-      global,
-    } = dataApex(playerInfo.response)
-
-    //
-    // let avatarUrlBase64 = await imageUrl2Base64(avatarUrl)
-    // avatarUrlBase64 = avatarUrlBase64 ? JPEG_PREFIX + avatarUrlBase64 : transparentImageBase64
-    //
-    //
-    // const gameImgs = []
-    //
-    // for (let i = 0; i < games.length; i++) {
-    //   const url = getGameCoverUrl(games[i].appid)
-    //   gameImgs[i] = await imageUrl2Base64(url)
-    //   gameImgs[i] = gameImgs[i] ? JPEG_PREFIX + gameImgs[i] : transparentImageBase64
-    // }
-
-    return ''
+      isOnline,
+      isInGame,
+      level,
+      rankScore,
+      rankName,
+      rankDiv,
+      totalkills,
+      totalDamage,
+      rankImg,
+      HeroImg,
+      arenaRankScore,
+    } = dataApex(playerInfo)
+    return apexCard(
+      player,
+      isOnline,
+      isInGame,
+      level,
+      rankScore,
+      rankName,
+      rankDiv,
+      totalkills,
+      totalDamage,
+      rankImg,
+      HeroImg,
+      arenaRankScore,
+      i18n)
   }
   catch (error) {
     // eslint-disable-next-line no-console
