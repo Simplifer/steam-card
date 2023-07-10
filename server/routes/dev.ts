@@ -57,36 +57,36 @@ const dict = {
   'Vantage': '万蒂奇',
   'Catalyst': '卡特莉丝',
   'Ballistic': '弹道',
-  'BR Season 15 kills': '第15赛季Apex击杀数',
-  'BR Season 15 wins': '第15赛季Apex胜场数',
-  'BR Season 14 kills': '第14赛季Apex击杀数',
-  'BR Season 14 wins': '第14赛季Apex胜场数',
-  'BR Season 13 kills': '第13赛季Apex击杀数',
-  'BR Season 13 wins': '第13赛季Apex胜场数',
-  'BR Season 12 kills': '第12赛季Apex击杀数',
-  'BR Season 12 wins': '第12赛季Apex胜场数',
-  'BR Season 11 kills': '第11赛季Apex击杀数',
-  'BR Season 11 wins': '第11赛季Apex胜场数',
-  'BR Season 10 kills': '第10赛季Apex击杀数',
-  'BR Season 10 wins': '第10赛季Apex胜场数',
-  'BR Season 9 kills': '第9赛季Apex击杀数',
-  'BR Season 9 wins': '第9赛季Apex胜场数',
-  'BR Season 8 kills': '第8赛季Apex击杀数',
-  'BR Season 8 wins': '第8赛季Apex胜场数',
-  'BR Season 7 kills': '第7赛季Apex击杀数',
-  'BR Season 7 wins': '第7赛季Apex胜场数',
-  'BR Season 6 kills': '第6赛季Apex击杀数',
-  'BR Season 6 wins': '第6赛季Apex胜场数',
-  'BR Season 5 kills': '第5赛季Apex击杀数',
-  'BR Season 5 wins': '第5赛季Apex胜场数',
-  'BR Season 4 kills': '第4赛季Apex击杀数',
-  'BR Season 4 wins': '第4赛季Apex胜场数',
-  'BR Season 3 kills': '第3赛季Apex击杀数',
-  'BR Season 3 wins': '第3赛季Apex胜场数',
-  'BR Season 2 kills': '第2赛季Apex击杀数',
-  'BR Season 2 wins': '第2赛季Apex胜场数',
-  'BR Season 1 kills': '第1赛季Apex击杀数',
-  'BR Season 1 wins': '第1赛季Apex胜场数',
+  'BR Season 15 kills': '第15赛季击杀数',
+  'BR Season 15 wins': '第15赛季胜场数',
+  'BR Season 14 kills': '第14赛季击杀数',
+  'BR Season 14 wins': '第14赛季胜场数',
+  'BR Season 13 kills': '第13赛季击杀数',
+  'BR Season 13 wins': '第13赛季胜场数',
+  'BR Season 12 kills': '第12赛季击杀数',
+  'BR Season 12 wins': '第12赛季胜场数',
+  'BR Season 11 kills': '第11赛季击杀数',
+  'BR Season 11 wins': '第11赛季胜场数',
+  'BR Season 10 kills': '第10赛季击杀数',
+  'BR Season 10 wins': '第10赛季胜场数',
+  'BR Season 9 kills': '第9赛季击杀数',
+  'BR Season 9 wins': '第9赛季胜场数',
+  'BR Season 8 kills': '第8赛季击杀数',
+  'BR Season 8 wins': '第8赛季胜场数',
+  'BR Season 7 kills': '第7赛季击杀数',
+  'BR Season 7 wins': '第7赛季胜场数',
+  'BR Season 6 kills': '第6赛季击杀数',
+  'BR Season 6 wins': '第6赛季胜场数',
+  'BR Season 5 kills': '第5赛季击杀数',
+  'BR Season 5 wins': '第5赛季胜场数',
+  'BR Season 4 kills': '第4赛季击杀数',
+  'BR Season 4 wins': '第4赛季胜场数',
+  'BR Season 3 kills': '第3赛季击杀数',
+  'BR Season 3 wins': '第3赛季胜场数',
+  'BR Season 2 kills': '第2赛季击杀数',
+  'BR Season 2 wins': '第2赛季胜场数',
+  'BR Season 1 kills': '第1赛季击杀数',
+  'BR Season 1 wins': '第1赛季胜场数',
 
   'Scout of Action': '侦察行动',
   'Smoke Show': '烟幕表演',
@@ -94,28 +94,28 @@ const dict = {
   'Arenas Wins': '竞技场获胜数',
   'Arenas Kills': '竞技场击杀数',
   'Arenas Damage': '竞技场模式伤害',
-  'BR Special event wins': 'Apex获胜数',
-  'BR Special event damage': 'Apex伤害数',
-  'BR Special event kills': 'Apex击杀数',
-  'BR Kills': 'Apex击杀数',
-  'BR Damage': 'Apex伤害',
-  'BR Wins': 'Apex胜场数',
-  'BR Executions': 'Apex终结数',
-  'BR Kills as Kill Leader': '作为击杀王的Apex击杀数',
-  'BR Headshots': 'Apex爆头数',
-  'BR Finishers': 'Apex终结技次数',
-  'BR Revives': 'Apex急救次数',
-  'BR Games Played': 'Apex已进行的游戏',
-  'BR Wins with Full Squad Alive': '小队无人阵亡获得的Apex胜场数',
-  'BR Top 3': '排名前3的Apex次数',
-  'BR AR kills': 'Apex突击步枪击杀数',
-  'BR LMG kills': 'Apex轻机枪击杀数',
-  'BR Marksman kills': 'Apex神射手击杀数',
-  'BR Pistol kills': 'Apex手枪击杀数',
-  'BR Shotgun kills': 'Apex霰弹枪击杀数',
-  'BR SMG kills': 'Apex冲锋枪击杀数',
-  'BR Sniper kills': 'Apex狙击枪击杀数',
-  'BR Care Package Weapon kills': 'Apex补给仓武器击杀数',
+  'BR Special event wins': '获胜数',
+  'BR Special event damage': '伤害数',
+  'BR Special event kills': '击杀数',
+  'BR Kills': '击杀数',
+  'BR Damage': '伤害',
+  'BR Wins': '胜场数',
+  'BR Executions': '终结数',
+  'BR Kills as Kill Leader': '击杀王击杀数',
+  'BR Headshots': '爆头数',
+  'BR Finishers': '终结技次数',
+  'BR Revives': '急救次数',
+  'BR Games Played': '已进行的游戏',
+  'BR Wins with Full Squad Alive': '无人阵亡胜场',
+  'BR Top 3': '前3次数',
+  'BR AR kills': '突击步枪击杀数',
+  'BR LMG kills': '轻机枪击杀数',
+  'BR Marksman kills': '神射手击杀数',
+  'BR Pistol kills': '手枪击杀数',
+  'BR Shotgun kills': '霰弹枪击杀数',
+  'BR SMG kills': '冲锋枪击杀数',
+  'BR Sniper kills': '狙击枪击杀数',
+  'BR Care Package Weapon kills': '补给武器击杀数',
 
   'Eye: Enemies Scanned': '扫描到敌人',
   'Eye: Traps Scanned': '扫描到陷阱',
@@ -216,7 +216,7 @@ export default defineEventHandler(async (event) => {
   setHeader(event, 'Content-Type', 'image/svg+xml')
   const PNG_PREFIX = 'data:image/png;base64,'
   const style = {
-    fontColor: 'rgba(255,255,255,0.9)',
+    fontColor: 'rgba(255,255,255,0.8)',
     onlineColor: '#4ce78a',
     offlineColor: '#e74c3c',
   }
@@ -256,7 +256,7 @@ export default defineEventHandler(async (event) => {
   }]
 
   if (isOnline > 0) {
-    onlineText = `在线（${isInGame === 0 ? '大厅中' : '游戏中'}）`
+    onlineText = `在线（大厅中）`
     onlineClassName = 'online'
   }
   else {
@@ -266,15 +266,15 @@ export default defineEventHandler(async (event) => {
   const onlineSvg = `<span  class="${onlineClassName}">${onlineText}</span>`
 
   return `
-  <svg width="800" height="300" xmlns:xlink="http://www.w3.org/1999/xlink"
+  <svg width="800" height="340" xmlns:xlink="http://www.w3.org/1999/xlink"
     xmlns="http://www.w3.org/2000/svg">
     <style>
         .card {
         color: ${style.fontColor};
         background: ${bgSvg};
         background-size: cover;
-        font-size:28px;
-        height:260px;
+        font-size:24px;
+        height:300px;
         width:760px;
         padding: 20px;
         gap:20px;
@@ -286,20 +286,21 @@ export default defineEventHandler(async (event) => {
         .info-line{
         display: flex;
         align-items: center;
-        font-size: 22px;
+        font-size: 20px;
+        white-space: nowrap;
         }
         .online {
-        font-size: 18px;
+        font-size: 20px;
         color: ${style.onlineColor};
         }
 
         .offline {
-        font-size: 18px;
+        font-size: 20px;
         color: ${style.offlineColor};
         }
         
         .rank{
-        width: 30%;
+        width: 28%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -318,8 +319,8 @@ export default defineEventHandler(async (event) => {
         }
         
         .user-info {
-        height: 80%;
-        width: 30%;
+        height: 85%;
+        width: 32%;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
@@ -327,9 +328,11 @@ export default defineEventHandler(async (event) => {
         }
         
         .legend-info {
+        height: 85%;
         flex-direction: column;
+          justify-content: space-around;
         text-align: right;
-        width: 30%;
+        width: 32%;
         display: flex;
         gap:10px;
         }
@@ -339,10 +342,11 @@ export default defineEventHandler(async (event) => {
         .val-color{
         color: #ec2f1a;
         text-shadow: 0 0 2px #f6f6f6;
+        font-size: 24px;
         }
   
     </style>
-    <foreignObject width="800" height="300">
+    <foreignObject width="800" height="340">
       <div class="card"
         xmlns="http://www.w3.org/1999/xhtml">
          <div class="user-info">
@@ -369,16 +373,16 @@ export default defineEventHandler(async (event) => {
                  当前英雄: <div style="color: #35abe5;margin-left: 8px">${selectedHero}</div>
               </div>
               <div class="info-line">
-                 垂直起降喷射器-移动距离累计：<span class="val-color">${rankScore || '-'}</span> 
+                 被动恢复生命值：<span class="val-color">${rankScore || '-'}</span> 
               </div>
               <div class="info-line">
-                 总击杀：<span class="val-color">${totalkills || '-'}</span> 
+                 被动恢复生命值：<span class="val-color">${totalkills || '-'}</span> 
               </div>
               <div class="info-line">
-                 总伤害：<span class="val-color">${totalDamage || '-'}</span> 
+                 被动恢复生命值：<span class="val-color">${totalDamage || '-'}</span> 
               </div>
               <div class="info-line">
-                 总伤害：<span class="val-color">${totalDamage || '-'}</span> 
+                 被动恢复生命值：<span class="val-color">${totalDamage || '-'}</span> 
               </div>
           </div>
       </div>
