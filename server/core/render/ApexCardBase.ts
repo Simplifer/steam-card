@@ -302,7 +302,7 @@ class Card {
       if (i <= 4) {
         this.legendInfoSvg += `
               <div class="info-line">
-                 ${dict[item.name] || item.name}：<span class="val-color">${item.value ?? '-'}</span> 
+                 ${dict[item.name?.toString()?.toUpperCase()] || item.name}：<span class="val-color">${item.value ?? '-'}</span> 
               </div>`
       }
       return null
@@ -411,11 +411,11 @@ class Card {
           <div class="rank">
            <span class="level">LV.${this.level ?? '-'} (${this.upRate ?? '-'}%)</span> 
           <img class="rank-img" src="${PNG_PREFIX + this.rankImg}" alt="rankImg"></img>
-          <div>${dict[this.rankName] || this.rankName} ${dict[this.rankDiv] || ''}</div>
+          <div>${dict[this.rankName?.toUpperCase()] || this.rankName} ${dict[this.rankDiv] || ''}</div>
           </div>
             <div class="legend-info">
               <div class="info-line">
-                 当前英雄: <div style="color: #1ccee7;text-shadow: 0 0 2px #f6f6f6;margin-left: 8px">${dict[this.selectedHero] || this.selectedHero}</div>
+                 当前英雄: <div style="color: #1ccee7;text-shadow: 0 0 2px #f6f6f6;margin-left: 8px">${dict[this.selectedHero?.toString()?.toUpperCase()] || this.selectedHero}</div>
               </div>
               ${this.legendInfoSvg}
           </div>
