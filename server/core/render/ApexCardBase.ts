@@ -245,8 +245,8 @@ class Card {
   private style = {
     borderColor: '',
     fontColor: '#fff',
-    onlineColor: '#4ce78a',
-    offlineColor: '#e74c3c',
+    onlineColor: '#39e87f',
+    offlineColor: '#e34534',
   }
 
   private bgSvg = ''
@@ -361,10 +361,12 @@ class Card {
         .online {
         font-size: 20px;
         color: ${this.style.onlineColor};
+         text-shadow: 0 0 2px #f6f6f6;
         }
         .offline {
         font-size: 20px;
         color: ${this.style.offlineColor};
+         text-shadow: 0 0 2px #f6f6f6;
         }
         .rank{
         width: 28%;
@@ -435,7 +437,7 @@ class Card {
           </div>
             <div class="legend-info">
               <div class="info-line">
-                 当前英雄: <div style="color: #35abe5;text-shadow: 0 0 2px #f6f6f6;margin-left: 8px">${dict[this.selectedHero] || this.selectedHero}</div>
+                 当前英雄: <div style="color: #1ccee7;text-shadow: 0 0 2px #f6f6f6;margin-left: 8px">${dict[this.selectedHero] || this.selectedHero}</div>
               </div>
               ${this.legendInfoSvg}
           </div>
