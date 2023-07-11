@@ -59,8 +59,58 @@ export interface ApexPlayerSummaries {
   global: Global
   realtime: Realtime
   legends: Legends
+  total: Total
+}
+export interface Total {
+  specialEvent_kills: SpecialEventKills
+  specialEvent_damage: SpecialEventDamage
+  specialEvent_wins: SpecialEventWins
+  damage: Damage
+  enemies_scanned: EnemiesScanned
+  doc_drone_healing: DocDroneHealing
+  kills: Kills
+  kd: Kd
 }
 
+export interface SpecialEventKills {
+  name: string
+  value: number
+}
+
+export interface SpecialEventDamage {
+  name: string
+  value: number
+}
+
+export interface SpecialEventWins {
+  name: string
+  value: number
+}
+
+export interface Damage {
+  name: string
+  value: number
+}
+
+export interface EnemiesScanned {
+  name: string
+  value: number
+}
+
+export interface DocDroneHealing {
+  name: string
+  value: number
+}
+
+export interface Kills {
+  name: string
+  value: number
+}
+
+export interface Kd {
+  value: string
+  name: string
+}
 export interface Global {
   name: string
   uid: string

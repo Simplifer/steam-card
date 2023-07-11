@@ -5,9 +5,11 @@ const errorCard = (errMsg: string, errInfo: string) => {
       <text x="10" y="50" text-anchor="start" fill="red">
         ${errInfo}
       </text>
-      <text x="10" y="80" fill="red" font-size="10">
-        ${errMsg}
-      </text>
+      <foreignObject width="400" height="180">
+      <body xmlns="http://www.w3.org/1999/xhtml">
+        <p style="margin-top:60px; color:red;font-size:12px;"> ${errMsg}</p>
+      </body>
+    </foreignObject>
     </svg>
   `
 }
