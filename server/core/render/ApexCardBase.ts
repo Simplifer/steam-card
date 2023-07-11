@@ -362,18 +362,17 @@ class Card {
         font-size: 20px;
         color: ${this.style.onlineColor};
         }
-
         .offline {
         font-size: 20px;
         color: ${this.style.offlineColor};
         }
-        
         .rank{
         width: 28%;
         display: flex;
         flex-direction: column;
         align-items: center;
          color: #ffc148;
+         text-shadow: 0 0 2px #f6f6f6;
         justify-content: center;
         }
         .rank-img{
@@ -382,11 +381,9 @@ class Card {
         object-fit: contain;
         margin: 10px 0;
         }
-        
         .avatar {
         border-radius: 5px;
         }
-        
         .user-info {
         height: 85%;
         width: 32%;
@@ -395,11 +392,10 @@ class Card {
         flex-direction: column;
         gap:10px;
         }
-        
         .legend-info {
         height: 85%;
         flex-direction: column;
-          justify-content: space-around;
+         justify-content: space-around;
         text-align: right;
         width: 32%;
         display: flex;
@@ -439,7 +435,7 @@ class Card {
           </div>
             <div class="legend-info">
               <div class="info-line">
-                 当前英雄: <div style="color: #35abe5;margin-left: 8px">${dict[this.selectedHero] || this.selectedHero}</div>
+                 当前英雄: <div style="color: #35abe5;text-shadow: 0 0 2px #f6f6f6;margin-left: 8px">${dict[this.selectedHero] || this.selectedHero}</div>
               </div>
               ${this.legendInfoSvg}
           </div>
