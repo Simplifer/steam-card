@@ -5,8 +5,10 @@ import type { Data, QueryParams } from 'types/valorantType'
 const player = ref('')
 onMounted(() => {
   const query = useRoute().query
-  player.value = `${query?.name}#${query?.tag}`
-  getMMR(query as unknown as QueryParams)
+  if (query?.name && query?.tag) {
+    player.value = `${query?.name}#${query?.tag}`
+    getMMR(query as unknown as QueryParams)
+  }
 })
 type MixData = Data & { win: boolean }
 const matchList = ref<MixData[]>([])
@@ -221,11 +223,12 @@ function formatDistanceToNow(input: Date | string): string {
 }
 
 .m-title {
-  width: 50px;
+  width: 60px;
   text-align: center;
 
   .time {
     font-size: 12px;
+    white-space: nowrap;
   }
 
   .tag {
