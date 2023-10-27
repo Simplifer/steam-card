@@ -15,9 +15,9 @@ const matchList = ref<MixData[]>([])
 
 function getMMR(params: QueryParams) {
   getValorantMatchs({
+    size: 10,
     ...params,
     page: 1,
-    size: 5,
   }).then((res) => {
     if (res.status === 200) {
       matchList.value = res.data?.map((m) => {
@@ -30,10 +30,6 @@ function getMMR(params: QueryParams) {
       }) as MixData[]
     }
   })
-}
-
-interface DateInput {
-  toDate(): Date
 }
 
 function formatDistanceToNow(input: Date | string): string {
