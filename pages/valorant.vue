@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { getValorantMatchs } from 'server/core/request/ValorantApi'
 import type { Data, QueryParams } from 'types/valorantType'
-
 const player = ref('')
 onMounted(() => {
   const query = useRoute().query
   if (query?.name && query?.tag) {
-    player.value = `${query?.name}#${query?.tag}`
+    player.value = `${query.name}#${query?.tag}`
+    query.name = encodeURIComponent((query.name || '').toString())
     getMMR(query as unknown as QueryParams)
   }
 })
@@ -92,10 +92,10 @@ function formatDistanceToNow(input: Date | string): string {
       >
       <div class="m-info">
         <div class="m-mode">
-          {{ gamemodeList.find(it => it.name === m.meta?.mode).displayName }}
+          {{ gamemodeList.find(it => it.name === m.meta?.mode)?.displayName || '--' }}
         </div>
         <div class="m-name">
-          {{ mapList.find(it => it.uuid === m.meta?.map?.id).displayName }}
+          {{ mapList.find(it => it.uuid === m.meta?.map?.id)?.displayName || '--' }}
         </div>
       </div>
       <div class="m-result">
@@ -126,7 +126,7 @@ function formatDistanceToNow(input: Date | string): string {
 <style lang="scss">
 .content {
   border-radius: 4px;
-  width: 400px;
+  min-width: 400px;
   background-image: linear-gradient(40deg, #3f1c20, #4d1f21);
   color: whitesmoke;
   display: flex;
@@ -134,6 +134,10 @@ function formatDistanceToNow(input: Date | string): string {
   gap: 8px;
   padding: 8px 4px;
   border: 2px solid #f87171;
+  position: absolute;
+  left: 50%;
+  top: 10%;
+  transform: translate(-50%);
 }
 
 .player-name {
